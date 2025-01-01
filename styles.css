@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.new-book-btn {
+    background-color: lightblue;
+    padding: 0.8rem 1rem;
+    font-weight: bold;
+    border: none;
+    text-decoration: underline;
+    border-radius: 10px;
+    font-size: 0.7rem;
+}
+
+.new-book-btn:hover {
+    cursor: pointer;
+}
+
+.form-modal, .status-form-modal {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    justify-content: center;
+}
+
+.form-close, .status-form-close {
+    color: grey;
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: end;
+}
+
+.form-close:hover,
+.form-close:focus,
+.status-form-close:hover,
+.status-form-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.book-form, .status-form {
+    background-color: lightblue;
+    width: 50ch;
+    border-radius: 10px;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-form>label {
+    align-self: start;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+.book-form>input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.book-form > input:focus,
+.book-form input[type="radio"]:focus,
+.book-form > button[type="submit"]:focus,
+.status-form input[type="radio"]:focus,
+.status-form > button[type="submit"]:focus {
+    outline: solid 0.8px black;
+}
+
+.book-form > button[type="submit"]:focus,
+.book-form > button[type="submit"]:hover,
+.status-form > button[type="submit"]:focus,
+.status-form > button[type="submit"]:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.book-form>fieldset,
+.status-form>fieldset {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid black;
+}
+
+.book-form>fieldset>legend,
+.status-form>fieldset>legend {
+    font-weight: bold;
+}
+
+.book-form input[type="radio"],
+.status-form input[type="radio"] {
+    accent-color: black;
+}
+
+.book-form>fieldset>label,
+.status.form>fieldset>label {
+    margin-right: 0.5rem;
+}
+
+.book-form > button[type="submit"],
+.status-form > button[type="submit"] {
+    background-color: grey;
+    color: white;
+    margin-top: 1rem;
+    align-self: start;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.7rem;
+}
+
+.no-books-yet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    justify-content: space-evenly;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    gap: 1.5rem;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: lightblue;
+    height: max-content;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.delete-book {
+    width: 1.5rem;
+    height: auto;
+    align-self: end;
+    padding-top: 0.2rem;
+}
+
+.status-container {
+    display: flex;
+    background-color: lightcyan;
+    width: max-content;
+    padding: 0.1rem 0.3rem;
+    margin-right: 1rem;
+}
+
+.edit-icon {
+    width: 1rem;
+    margin-left: 0.3rem;
+    margin-bottom: -0.1rem;
+}

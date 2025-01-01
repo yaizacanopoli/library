@@ -9,6 +9,7 @@ const formCloseBtn = document.querySelector("#form-close");
 const statusChangeClose = document.querySelector("#status-form-close");
 const formSubmitBtn = document.querySelector("#submit-btn");
 const bookContainer = document.querySelector("#book-container");
+const noBooksYet = document.querySelector("#no-books-yet");
 const deleteBookBtn = document.querySelectorAll("#delete-book");
 const editBookBtn = document.querySelector("#edit-icon");
 const saveChangesBtn = document.querySelector("#save-changes-btn");
@@ -82,6 +83,12 @@ bookContainer.addEventListener("click", e => {
             const bookIndex = Array.from(bookContainer.children).indexOf(bookCard);
             myLibrary.splice(bookIndex, 1);
             bookCard.remove();
+        }
+        if (myLibrary.length === 0) {
+            bookContainer.innerHTML =
+            `<div class="no-books-yet" id="no-books-yet">
+                <h2>No books added yet!</h2>
+            </div>`
         }
     }
 });

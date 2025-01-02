@@ -25,12 +25,17 @@
             <input id="form-book-pages" name="number-of-pages" type="tel"></input>
             <fieldset>
                 <legend>Have you read this book yet?</legend>
-                <input id="form-book-status" name="read-status" type="radio" value="Read" checked></input>
-                <label for="Read">Read</label>
-                <input id="form-book-status" name="read-status" type="radio" value="Not read yet"></input>
-                <label for="Read">Not read yet</label>
-                <input id="form-book-status" name="read-status" type="radio" value="Currently reading"></input>
-                <label for="Read">Currently reading</label>
+                <div class="radio-container" id="radio-container">
+                    <label>
+                        <input id="form-book-status" name="read-status" type="radio" value="Read" checked></input>
+                        Read</label>
+                    <label>
+                        <input id="form-book-status" name="read-status" type="radio" value="Not read yet"></input>
+                        Not read yet</label>
+                    <label>
+                        <input id="form-book-status" name="read-status" type="radio" value="Currently reading"></input>
+                        Currently reading</label>
+                </div>
             </fieldset>
             <button type="submit" id="submit-btn">Submit</button>
         </form>
@@ -41,12 +46,17 @@
             <span class="status-form-close" id="status-form-close">&times;</span>
             <fieldset>
                 <legend>Have you read this book yet?</legend>
-                <input id="change-book-status" name="read-status" type="radio" value="Read" checked></input>
-                <label for="Read">Read</label>
-                <input id="change-book-status" name="read-status" type="radio" value="Not read yet"></input>
-                <label for="Read">Not read yet</label>
-                <input id="change-book-status" name="read-status" type="radio" value="Currently reading"></input>
-                <label for="Read">Currently reading</label>
+                <div class="radio-container" id="radio-container">
+                    <label>
+                        <input id="change-book-status" name="read-status" type="radio" value="Read" checked></input>
+                        Read</label>
+                    <label>
+                        <input id="change-book-status" name="read-status" type="radio" value="Not read yet"></input>
+                        Not read yet</label>
+                    <label>
+                        <input id="change-book-status" name="read-status" type="radio" value="Currently reading"></input>
+                        Currently reading</label>
+                </div>
             </fieldset>
             <button type="submit" id="save-changes-btn">Save</button>
         </form>

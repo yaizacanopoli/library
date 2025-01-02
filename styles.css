@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .btn-container {
@@ -53,7 +58,7 @@
 
 .book-form, .status-form {
     background-color: lightblue;
-    width: 50ch;
+    width: clamp(40ch, 80vw, 60ch);
     border-radius: 10px;
     padding: 1rem 1.5rem 1.5rem 1.5rem;
     display: flex;
@@ -104,13 +109,19 @@
     font-weight: bold;
 }
 
+.radio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 .book-form input[type="radio"],
 .status-form input[type="radio"] {
     accent-color: black;
 }
 
-.book-form>fieldset>label,
-.status.form>fieldset>label {
+.book-form>fieldset label,
+.status.form>fieldset label {
     margin-right: 0.5rem;
 }
 
@@ -127,20 +138,21 @@
     font-size: 0.7rem;
 }
 
-.no-books-yet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 20vh;
-}
-
 .book-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     justify-content: space-evenly;
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
     gap: 1.5rem;
+}
+
+.no-books-yet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    grid-column: 1 / -1;
 }
 
 .book-card {

@@ -24,6 +24,7 @@ html {
     text-decoration: underline;
     border-radius: 10px;
     font-size: 0.7rem;
+    color: black;
 }
 
 .new-book-btn:hover {

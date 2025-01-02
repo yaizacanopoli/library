@@ -27,9 +27,8 @@ html {
     color: black;
 }
 
-.new-book-btn a,
-.new-book-btn a:visited,
-.new-book-btn a:active {
+.new-book-btn:visited,
+.new-book-btn:active {
     color: black;
 }
 

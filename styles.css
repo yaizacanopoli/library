@@ -24,11 +24,16 @@ html {
     text-decoration: underline;
     border-radius: 10px;
     font-size: 0.7rem;
+}
+
+.new-book-btn:visited,
+.new-book-btn:active {
     color: black;
 }
 
 .new-book-btn:hover {
     cursor: pointer;
+    color: grey;
 }
 
 .form-modal, .status-form-modal {

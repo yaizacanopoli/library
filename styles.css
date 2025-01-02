@@ -26,14 +26,14 @@ html {
     font-size: 0.7rem;
 }
 
-.new-book-btn:visited,
-.new-book-btn:active {
+.new-book-btn a,
+.new-book-btn a:visited,
+.new-book-btn a:active {
     color: black;
 }
 
 .new-book-btn:hover {
     cursor: pointer;
-    color: grey;
 }
 
 .form-modal, .status-form-modal {

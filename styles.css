@@ -192,3 +192,8 @@ html {
     margin-left: 0.3rem;
     margin-bottom: -0.1rem;
 }
+
+.edit-icon:hover,
+.delete-book:hover {
+    cursor: pointer;
+}

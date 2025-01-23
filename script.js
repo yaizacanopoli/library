@@ -28,12 +28,15 @@ formCloseBtn.addEventListener("click", () => {
     documentMain.style.opacity = "1";
 })
 
-function Book(author, title, pages, status) {
-    this.author = author,
-    this.title = title,
-    this.pages = pages,
-    this.status = status,
-    this.updateStatus = function () {
+class Book {
+    constructor(author, title, pages, status) {
+        this.author = author,
+        this.title = title,
+        this.pages = pages,
+        this.status = status
+    }
+
+    updateStatus() {
         let newBookStatus = document.querySelector("#status-form input[name=read-status]:checked").value;
         this.status = newBookStatus;
     }
